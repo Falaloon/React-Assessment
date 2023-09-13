@@ -2,7 +2,7 @@ import { NavBar } from "./NavBar";
 
 export const Owner = () => {
   return (
-    <div className="text-cener">
+    <div className="text-center">
       <NavBar />
       <h1>Soontaree - Group K - 45</h1>
       <img

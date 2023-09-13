@@ -26,6 +26,10 @@ table{
   margin-top: 50px;
 }
 
-.text-cener{
+.text-center{
   text-align: center;
+}
+
+.text-input{
+  margin: 16px;
 }

@@ -32,7 +32,7 @@ export const Admin = ({ employees, setEmployees }) => {
 
   return (
     <>
-      <div className="text-cener">
+      <div className="text-center text-input">
         <h3>Create User Here</h3>
         <input
           type="text"
