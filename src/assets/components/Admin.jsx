@@ -32,36 +32,41 @@ export const Admin = ({ employees, setEmployees }) => {
 
   return (
     <>
-      <div className="text-center text-input">
-        <h3>Create User Here</h3>
-        <input
-          type="text"
-          placeholder="Name"
-          name="name"
-          value={newEmployee.name}
-          onChange={onChange}
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          name="lastname"
-          value={newEmployee.lastname}
-          onChange={onChange}
-        />
-        <input
-          type="text"
-          placeholder="Position"
-          name="position"
-          value={newEmployee.position}
-          onChange={onChange}
-        />
-        <button
-          onClick={() => {
-            onSave();
-          }}
-        >
-          Save
-        </button>
+      <div className="create-user">
+        <h2>Create User Here</h2>
+        <div className="text-center">
+          <input
+            className="text-input"
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={newEmployee.name}
+            onChange={onChange}
+          />
+          <input
+            className="text-input"
+            type="text"
+            placeholder="Last Name"
+            name="lastname"
+            value={newEmployee.lastname}
+            onChange={onChange}
+          />
+          <input
+            className="text-input"
+            type="text"
+            placeholder="Position"
+            name="position"
+            value={newEmployee.position}
+            onChange={onChange}
+          />
+          <button
+            onClick={() => {
+              onSave();
+            }}
+          >
+            Save
+          </button>
+        </div>
       </div>
       <div className="table-admin">
         <table>
