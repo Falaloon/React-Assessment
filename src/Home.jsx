@@ -41,32 +41,35 @@ function Home() {
   //ถ้าฟังก์ชั่น return ค่าเดียวไม่ต้องใส่ปีกกาก็ได้
 
   return (
-    <>
+    <div className="home-narmal">
       <NavBar />
       <h1>
         Generation Thailand <br />
         {getHeaderText()}
       </h1>
-      <div className="button">
-        <button
-          onClick={() => {
-            setSector("user");
-          }}
-        >
-          User Home Sector
-        </button>
+      <div className="sector">
+        <div className="button">
+          <button
+            onClick={() => {
+              setSector("user");
+            }}
+          >
+            User Home Sector
+          </button>
 
-        <button
-          onClick={() => {
-            setSector("admin");
-          }}
-        >
-          Admin Home Sector
-        </button>
+          <button
+            onClick={() => {
+              setSector("admin");
+            }}
+          >
+            Admin Home Sector
+          </button>
+        </div>
       </div>
+
       {isAdmin && <Admin employees={employees} setEmployees={setEmployees} />}
       {isUser && <User employees={employees} />}
-    </>
+    </div>
   );
 }
 
