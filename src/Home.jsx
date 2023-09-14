@@ -41,7 +41,7 @@ function Home() {
   //ถ้าฟังก์ชั่น return ค่าเดียวไม่ต้องใส่ปีกกาก็ได้
 
   return (
-    <div className="home-narmal">
+    <div className="home-normal">
       <NavBar />
       <h1>
         Generation Thailand <br />
